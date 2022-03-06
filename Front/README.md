@@ -1,3 +1,7 @@
+[![CI](https://github.com/venomania/TestUni/actions/workflows/ciTest.yml/badge.svg)](https://github.com/venomania/TestUni/actions/workflows/ciTest.yml)
+
+# J'ai mit des wait car mon api etait lent (cypress)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
