@@ -8,13 +8,14 @@ const Home = ({ setRoute }: { setRoute: (data: any) => void }) => {
       {loading && <div>Loading....</div>}
       <div onClick={() => setRoute({ route: "cart" })}>Aller sur panier</div>
       <div>
+        <h1>Page d'accueil</h1>
         {products.map((product) => {
           return (
-            <React.Fragment>
-              <div
+            <React.Fragment  key={product.id}>
+              <div id={product.id.toString()}
                 onClick={() => setRoute({ route: "product", data: product })}
               >
-                <img src={product.image} alt="" />
+                <img src={product.image} alt="" className="image"/>
                 <p>Figurine de {product.name}</p>
                 <p>Quantitée {product.quantity}</p>
               </div>

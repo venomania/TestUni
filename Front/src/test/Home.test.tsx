@@ -20,12 +20,13 @@ const server = setupServer(
 beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
+
 test("loading", async () => {
     const { result } = renderHook(() => useHome());
     const { loading, loadProducts } = result.current;
     expect(loading).toEqual(true);
     await act(async () => { await loadProducts() });
     const { products } = result.current;
-    console.log(products)
+
 }); 
 

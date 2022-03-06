@@ -8,6 +8,7 @@ const useProduct = (product: Product) => {
   const addProduct = () => {
     return new Promise((resolve) => {
       setLoading(true);
+      console.log(`${endpoint}/cart/${product.id}`);
       fetch(`${endpoint}/cart/${product.id}`, {
         headers: {
           Accept: "application/json",
