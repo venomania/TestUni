@@ -35,5 +35,6 @@ describe("RickanMorty", () => {
         cy.contains("Supprimer du panier").click();
         cy.wait(10000);
         cy.contains("Produit bien supprimé");
+        
       });
   });
